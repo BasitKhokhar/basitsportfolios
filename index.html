@@ -28,16 +28,21 @@
 	</script>
 	<style>
 		.btn-lg {
-    padding: 10px 30px; /* Increase padding for larger button */
-    font-size: 18px; /* Adjust font size */
-    background-color: #007bff; /* Change button color */
-    border-radius: 50px; /* Round button corners */
-    transition: background-color 0.3s ease;
-}
+			padding: 10px 30px;
+			/* Increase padding for larger button */
+			font-size: 18px;
+			/* Adjust font size */
+			background-color: #007bff;
+			/* Change button color */
+			border-radius: 50px;
+			/* Round button corners */
+			transition: background-color 0.3s ease;
+		}
 
-.btn-lg:hover {
-    background-color: #0056b3; /* Change color on hover */
-}
+		.btn-lg:hover {
+			background-color: #0056b3;
+			/* Change color on hover */
+		}
 
 		.animate__bounceInDown {
 			--animate-duration: 5s !important;
@@ -99,7 +104,36 @@
 			color: black !important;
 			font-weight: 900 !important;
 		}
+          
+		.custom-shadow {
+  background: #1a1a1a; /* Dark card background */
+  padding: 20px;
+  /* border-radius: 12px; */
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3); /* Golden glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
 
+.custom-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
+}
+
+.custom-shadow .date {
+  color: #ffc107 !important;
+  font-weight: 600;
+}
+
+.custom-shadow h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.custom-shadow .position {
+  font-size: 16px;
+  color: #ccc;
+}
 		@media (max-width: 768px) {
 			.price-card {
 				margin-bottom: 20px;
@@ -150,10 +184,10 @@
 						</h2>
 						<p>
 							<a href="#contact-section" class="btn btn-primary py-3 px-4 animated_btn wow bounceInLeft"
-								data-wow-delay="6.6s">Hire me</a>
+								data-wow-delay="6.8s">Hire me</a>
 							<a href="https://www.linkedin.com/feed/" id="btn-sec"
 								class="btn btn-white btn-outline-white py-3 px-4 animated_btn wow bounceInLeft"
-								data-wow-delay="6.3s">LinkedIn</a>
+								data-wow-delay="6.5s">LinkedIn</a>
 							<!-- <a href="Fiver.html" class="btn btn-primary py-3 px-4 animated_btn wow bounceInLeft"
 								data-wow-delay="6.0s">Fiver</a> -->
 						</p>
@@ -167,55 +201,63 @@
 		</div>
 	</section>
 	<!-- about -->
-	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+	<section class="ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
-			<div class="row d-flex">
-				<div class="col-md-6 col-lg-5 d-flex" style="transform: translateY(-60px);">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center ftco-animate m-t-0"
-							style="background-image:url(images/bg2.png);">
-						</div>
+			<!-- Heading -->
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">ABout</h1>
+					<h2 class="mb-4">ABout</h2>
+				</div>
+			</div>
+
+			<!-- Content Section -->
+			<div class="row d-flex align-items-center">
+				<!-- Left Image Section -->
+				<div class="col-md-6 col-lg-5">
+					<div class="img-about img pb-5">
+						<img src="images/bg2.png" alt="About Image" class="img-fluid rounded ftco-animate" style="transform: translateY(-50px);">
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-					<div class="row justify-content-start pb-1">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-3">About Me</h2>
-							<p>Hi there! I'm <b style="color: aliceblue;">Muhammad Talha Basit,</b> a passionate <b
-									style="color: aliceblue;">Fullstack web developer</b> with
-								over 3.5 years
-								of experience building beautiful and functional websites.My front-end expertise in HTML,
-								CSS, JavaScript, and React.js brings designs to life, while my back-end prowess with
-								Node.js ensures seamless performance and scalability. I thrive on crafting intuitive,
-								user-focused applications that merge creativity with technical precision, delivering
-								impactful web solutions that stand out.
+
+				<!-- Right Text Section -->
+				<div class="col-md-6 col-lg-7 pl-lg-5">
+					<div class="row justify-content-start">
+						<div class="col-md-12 ftco-animate">
+							<p style=" font-size: small;">Hi there! I’m a dedicated <b style="color: aliceblue;">Full Stack Web & React Native
+									Developer</b> with 2.5 years of hands-on experience building modern,
+								high-performance web and mobile applications.On the frontend, I work extensively with
+								React.js and Tailwind CSS and also build mobile applications using React Native.On the
+								backend, I utilize Node.js and Express.js to create scalable APIs and server-side logic,
+								paired with MySQL and Firebase for efficient data management and real-time features.
+
 							</p>
 							<ul class="about-info px-md-0 px-1 my-0">
-								<li class="d-flex"><span>Name:</span> <span>Muhammad Talha Basit</span></li>
-								<li class="d-flex"><span>Date of birth:</span> <span>March 03, 2003</span></li>
-								<li class="d-flex"><span>Address:</span> <span>Sargodha, Pakistan</span>
-								</li>
-								<li class="d-flex"><span>Zip code:</span> <span>40100</span></li>
-								<li class="d-flex"><span>Email:</span> <span>basitkhokhar957@gmail.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>+92306 0760549</span></li>
+								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Name:  </span> <span class="pl-4">Muhammad Talha Basit</span></li>
+								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Date of birth:</span> <span  class="pl-4">March 03, 2003</span></li>
+								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Address:</span> <span class="pl-4">Sargodha, Pakistan</span></li>
+								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Zip code:</span> <span class="pl-4">40100</span></li>
+								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Email:</span> <span class="pl-4">basitkhokhar957@gmail.com</span></li>
+								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Phone: </span> <span class="pl-4">+92306 0760549</span></li>
 							</ul>
-						</div>
-					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-0">
-						<div class="text">
-							<p class="mb-1">
-								<span class="number" data-number="20">0</span>
-								<span>Project complete</span>
-							</p>
-							<p><a href="#" class="btn btn-primary py-3 px-3" id="download-cv">Download CV</a></p>
+							<div class="counter-wrap ftco-animate d-flex mt-4">
+								<div class="text">
+									<p class="mb-1" style=" font-weight: 600; color: aliceblue;">
+										<span class="number" data-number="20">15</span>
+										<span>Project complete</span>
+									</p>
+									<p><a href="#" class="btn btn-primary py-3 px-3" id="download-cv">Download CV</a>
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
 	<!-- Resume/CV Section -->
 	<section class="ftco-section ftco-no-pb" id="resume-section">
 		<div class="container">
@@ -229,24 +271,24 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<div class="resume-wrap wow bounceInUp" data-wow-delay="0.1s">
+					<div class="resume-wrap wow bounceInUp custom-shadow" data-wow-delay="0.1s">
 						<span class="date">2021-Continue</span>
 						<h2>Bachelor of Software Engineering</h2>
 						<span class="position">University Of Lahore</span>
 					</div>
-					<div class="resume-wrap wow bounceInUp" data-wow-delay="0.3s">
+					<div class="resume-wrap wow bounceInUp custom-shadow" data-wow-delay="0.3s">
 						<span class="date">2022-2023</span>
 						<h2>Web Development</h2>
 						<span class="position">WebsCare</span>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="resume-wrap wow bounceInUp" data-wow-delay="0.5s">
+					<div class="resume-wrap wow bounceInUp custom-shadow" data-wow-delay="0.5s">
 						<span class="date">2024-Present</span>
 						<h2>Web Development Continue</h2>
 						<span class="position">CoderzPark</span>
 					</div>
-					<div class="resume-wrap wow bounceInUp" data-wow-delay="0.7s">
+					<div class="resume-wrap wow bounceInUp custom-shadow" data-wow-delay="0.7s">
 						<span class="date">2018-2020</span>
 						<h2>Fsc Pre-Engineering</h2>
 						<span class="position">Superior College Sargodha</span>
@@ -337,7 +379,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- skills section -->
 	<section class="ftco-section" id="skills-section">
 		<div class="container">
@@ -885,18 +927,19 @@
 						style="background-image: url(images/web1.PNG);" data-wow-delay="0.1s">
 						<div class="overlay"></div>
 						<div class="text text-center p-4 rounded">
-							<h3><a href="https://basithealthhub.netlify.app/" class="black">Medical related Website</a></h3>
+							<h3><a href="https://basithealthhub.netlify.app/" class="black">Medical related Website</a>
+							</h3>
 							<span class="black">Project</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="project img wow bounceInUp d-flex justify-content-center align-items-center rounded"
-						style="background-image: url(images/web2.PNG);"
-						data-wow-delay="0.3s">
+						style="background-image: url(images/web2.PNG);" data-wow-delay="0.3s">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://autocarehub.netlify.app/" class="black">AutoCare related Website</a></h3>
+							<h3><a href="https://autocarehub.netlify.app/" class="black">AutoCare related Website</a>
+							</h3>
 							<span class="black">Project</span>
 						</div>
 					</div>
@@ -906,7 +949,8 @@
 						style="background-image: url(images/web3.PNG);" data-wow-delay="0.5s">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://basitsroyalhotel.netlify.app/" class="black">Hoteling related Website</a></h3>
+							<h3><a href="https://basitsroyalhotel.netlify.app/" class="black">Hoteling related
+									Website</a></h3>
 							<span class="black">Project</span>
 						</div>
 					</div>
@@ -916,29 +960,30 @@
 						style="background-image: url(images/web4.PNG);" data-wow-delay="0.7s">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://basitkhokhar.github.io/second-project/" class="black">IU University Clone Website</a></h3>
+							<h3><a href="https://basitkhokhar.github.io/second-project/" class="black">IU University
+									Clone Website</a></h3>
 							<span class="black">Project</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="project img wow bounceInUp d-flex justify-content-center align-items-center rounded"
-						style="background-image: url(images/web5.PNG);"
-						data-wow-delay="0.9s">
+						style="background-image: url(images/web5.PNG);" data-wow-delay="0.9s">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://basitadminpanel.netlify.app/" class="black">Admin Panel Frontend Design</a></h3>
+							<h3><a href="https://basitadminpanel.netlify.app/" class="black">Admin Panel Frontend
+									Design</a></h3>
 							<span class="black">Project</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="project img wow bounceInUp d-flex justify-content-center align-items-center rounded"
-						style="background-image: url(images/web6.PNG);"
-						data-wow-delay="0.9s">
+						style="background-image: url(images/web6.PNG);" data-wow-delay="0.9s">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="https://basitkhokhar.github.io/project-figma/" class="black">Figma Design to Coding Web Design</a></h3>
+							<h3><a href="https://basitkhokhar.github.io/project-figma/" class="black">Figma Design to
+									Coding Web Design</a></h3>
 							<span class="black">Projects</span>
 						</div>
 					</div>
@@ -947,12 +992,12 @@
 			<!-- See All Button -->
 			<div class="row justify-content-center mt-4">
 				<div class="col-md-4 text-center">
-					<a href="website_projects.html" class="btn btn-primary btn-lg">See All</a>
+					<a href="projecttypes.html" class="btn btn-primary btn-lg">See All</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- <section class="ftco-section" id="blog-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-5">
@@ -1184,8 +1229,7 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">About</h2>
-						<p>This is my portfolio where I showcase my expertise in frontend web development & Graphics
-							& linkedIn. Explore a
+						<p>This is my portfolio where I showcase my expertise in Web & App development. Explore a
 							collection of projects that emphasize creativity, usability, and technology</p>
 						<!-- <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
 							<li class="ftco-animate"><a href="#"><span class="icon-zoom_out"></span></a></li>
@@ -1312,7 +1356,7 @@
 			// Start typing the first line, then the next without delay
 			typeWriter("Hello!", subheading, 100, () => {
 				typeWriter("I'm Talha Basit", nameHeading, 100, () => {
-					typeWriter("A Freelance Fullstack Web Developer", jobTitle, 100);
+					typeWriter("A Freelance Fullstack Web & React Native Developer", jobTitle, 100);
 				});
 			});
 		});
