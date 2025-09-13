@@ -104,36 +104,89 @@
 			color: black !important;
 			font-weight: 900 !important;
 		}
-          
+
 		.custom-shadow {
-  background: #1a1a1a; /* Dark card background */
-  padding: 20px;
-  /* border-radius: 12px; */
-  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3); /* Golden glow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #fff;
-}
+			background: #1a1a1a;
+			/* Dark card background */
+			padding: 20px;
+			/* border-radius: 12px; */
+			box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+			/* Golden glow */
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			color: #fff;
+		}
 
-.custom-shadow:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
-}
+		.custom-shadow:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
+		}
 
-.custom-shadow .date {
-  color: #ffc107 !important;
-  font-weight: 600;
-}
+		.custom-shadow .date {
+			color: #ffc107 !important;
+			font-weight: 600;
+		}
 
-.custom-shadow h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
+		.custom-shadow h2 {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
 
-.custom-shadow .position {
-  font-size: 16px;
-  color: #ccc;
-}
+		.custom-shadow .position {
+			font-size: 16px;
+			color: #ccc;
+		}
+
+		/* Equal box size */
+		.tech-carousel .item {
+			height: 140px;
+			/* default height for desktop */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #ffffff10;
+			/* subtle background */
+			border-radius: 12px;
+			padding: 10px;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		/* Logo images */
+		.tech-carousel .item img {
+			max-height: 100px;
+			max-width: 100%;
+			object-fit: contain;
+		}
+
+		/* Hover effect (optional) */
+		.tech-carousel .item:hover {
+			transform: scale(1.05);
+			box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+		}
+
+		/* ✅ Responsive adjustments */
+		@media (max-width: 992px) {
+			.tech-carousel .item {
+				height: 120px;
+				/* slightly smaller for tablets */
+			}
+
+			.tech-carousel .item img {
+				max-height: 80px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.tech-carousel .item {
+				height: 100px;
+				/* even smaller for mobile */
+			}
+
+			.tech-carousel .item img {
+				max-height: 60px;
+			}
+		}
+
 		@media (max-width: 768px) {
 			.price-card {
 				margin-bottom: 20px;
@@ -215,19 +268,19 @@
 			<div class="row d-flex align-items-center">
 				<!-- Left Image Section -->
 				<div class="col-md-6 col-lg-5">
-					<div  style="transform: translateY(-65px);" class="img-about img ">
-					  <img src="images/bg2.png" alt="About Image" 
-						   class="img-fluid rounded ftco-animate" 
-						   style="transform: translateY(-150px);">
+					<div style="transform: translateY(-65px);" class="img-about img ">
+						<img src="images/bg2.png" alt="About Image" class="img-fluid rounded ftco-animate"
+							style="transform: translateY(-150px);">
 					</div>
-				  </div>
-				  
+				</div>
+
 
 				<!-- Right Text Section -->
-				<div  style="transform: translateY(-30px);"  class="col-md-6 col-lg-7 pl-lg-5">
+				<div style="transform: translateY(-30px);" class="col-md-6 col-lg-7 pl-lg-5">
 					<div class="row justify-content-start">
 						<div class="col-md-12 ftco-animate">
-							<p style=" font-size: 14px;">Hi there! I’m a dedicated <b style="color: aliceblue;">Full Stack Web & React Native
+							<p style=" font-size: 14px;">Hi there! I’m a dedicated <b style="color: aliceblue;">Full
+									Stack Web & React Native
 									Developer</b> with 2.5 years of hands-on experience building modern,
 								high-performance web and mobile applications.On the frontend, I work extensively with
 								React.js and Tailwind CSS and also build mobile applications using React Native.On the
@@ -236,12 +289,18 @@
 
 							</p>
 							<ul class="about-info px-md-0 px-1 my-0">
-								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Name:  </span> <span class="pl-4">Muhammad Talha Basit</span></li>
+								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Name:
+									</span> <span class="pl-4">Muhammad Talha Basit</span></li>
 								<!-- <li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Date of birth:</span> <span  class="pl-4">March 03, 2003</span></li> -->
-								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Address:</span> <span class="pl-4">Sargodha, Pakistan</span></li>
+								<li class="d-flex gap-4"><span
+										style=" font-weight: 600; color: aliceblue;">Address:</span> <span
+										class="pl-4">Sargodha, Pakistan</span></li>
 								<!-- <li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Zip code:</span> <span class="pl-4">40100</span></li> -->
-								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Email:</span> <span class="pl-4">basitkhokhar957@gmail.com</span></li>
-								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Phone: </span> <span class="pl-4">+92306 0760549</span></li>
+								<li class="d-flex gap-4"><span
+										style=" font-weight: 600; color: aliceblue;">Email:</span> <span
+										class="pl-4">basitkhokhar957@gmail.com</span></li>
+								<li class="d-flex gap-4"><span style=" font-weight: 600; color: aliceblue;">Phone:
+									</span> <span class="pl-4">+92306 0760549</span></li>
 							</ul>
 							<div class="counter-wrap ftco-animate d-flex mt-4">
 								<div class="text">
@@ -305,6 +364,54 @@
 			</div>
 		</div>
 	</section>
+	<!-- Tech Stack Section -->
+	<section class="ftco-section bg-dark" id="tech-stack-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Tech Stack</h1>
+					<h2 class="mb-4">My Tech Stack</h2>
+					<p>These are the technologies I use to build web & mobile applications.</p>
+				</div>
+			</div>
+
+			<!-- Owl Carousel Slider -->
+			<div class="owl-carousel tech-carousel ftco-animate">
+				<div class="item text-center">
+					<img src="images/html.png" alt="HTML" class="img-fluid">
+				</div>
+				<div class="item text-center">
+					<img src="images/css.png" alt="CSS" class="img-fluid">
+				</div>
+				<div class="item text-center">
+					<img src="images/tailwind.png" alt="Tailwind CSS" class="img-fluid">
+				</div>
+				<div class="item text-center">
+					<img src="images/js.png" alt="JavaScript" class="img-fluid">
+				</div>
+				<div class="item text-center">
+					<img src="images/react.png" alt="React.js" class="img-fluid">
+				</div>
+				<div class="item text-center">
+					<img src="images/reactnative.png" alt="React Native" class="img-fluid">
+				</div>
+				<div class="item text-center">
+					<img src="images/node.png" alt="Node.js" class="img-fluid">
+				</div>
+				<div class="item text-center">
+					<img src="images/express.png" alt="Express.js" class="img-fluid">
+				</div>
+				<div class="item text-center">
+					<img src="images/mysql.png" alt="MySQL" class="img-fluid">
+				</div>
+				<div class="item text-center">
+					<img src="images/firebase.png" alt="Firebase" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 	<!-- services section -->
 	<section class="ftco-section" id="services-section">
 		<div class="container">
@@ -560,7 +667,7 @@
 							<ul style=" text-align: left;">
 								<li>5 Pages</li>
 								<li>upto 5 Sections </li>
-								
+
 								<li>Fully Responsive Static Websites</li>
 								<li>Convert any design to functional Website</li>
 								<li>7 Days Delivery</li>
@@ -1412,6 +1519,24 @@
 			anchorElement.click();
 		});
 	</script>
+	<!-- horizontal	slider  -->
+	<script>
+		$(document).ready(function () {
+			$(".tech-carousel").owlCarousel({
+				loop: true,
+				margin: 20,
+				autoplay: true,
+				autoplayTimeout: 2000,
+				autoplayHoverPause: true,
+				responsive: {
+					0: { items: 2 },
+					600: { items: 4 },
+					1000: { items: 6 }
+				}
+			});
+		});
+	</script>
+
 	<script>
 		// Smooth scrolling using jQuery (optional)
 		$(document).ready(function () {
