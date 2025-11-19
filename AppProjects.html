@@ -19,6 +19,47 @@
 
     <style>
 
+        .app-card {
+    background-color: rgba(240, 248, 255, 0.068);
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.app-description {
+    padding: 0 20px;
+    color: #ddd;
+    line-height: 1.7;
+}
+
+.app-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 20px;
+}
+
+.badge-tech {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 6px 12px;
+    border-radius: 25px;
+    font-size: 13px;
+    color: #ffc107;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.app-features {
+    padding: 10px 35px;
+    color: #ccc;
+}
+
+.app-features li {
+    margin-bottom: 6px;
+    list-style: none;
+    font-size: 15px;
+}
+
+
         /* Media queries for responsiveness */
         @media (max-width: 1024px) {
             .project-grid {
@@ -60,195 +101,23 @@
             </div>
         </div>
     </nav>
-    <section class="ftco-section ftco-project" id="projects-section">
-        <div class="container">
-            <div class="row justify-content-center pb-5">
-                <div class="col-md-12 heading-section text-center">
-                    <h1 class="big big-2">React Native APPs Projects</h1>
-                    <h2 class="mb-4" data-aos="fade-up">React Native APPs Projects</h2>
-                    <p data-aos="fade-up">Explore my portfolio showcasing diverse React Native App projects highlighting
-                        creativity, functionality, and
-                        technical expertise.</p>
-                </div>
-            </div>
+  <section class="ftco-section ftco-project" id="projects-section">
+    <div class="container">
 
-
-
-            <!-- Project grid -->
-
-            <div
-                style="background-color: rgba(240, 248, 255, 0.068); display: flex; flex-direction: column;margin-top: 40px;">
-                <h3 class="text-center font-weight-bold" data-aos="fade-up">Full-stack Ecommerce App</h3>
-                <section>
-                    <section style="display: flex;align-items: center; padding: 15px 15px 0 15px;">
-                        <p data-aos="fade-up">Basit Sanitary App is a modern, cross-platform mobile e-commerce
-                            application developed as my Final Year Project. It provides a seamless shopping experience
-                            for sanitary products, built specifically for Android and iOS. The app aims to make product
-                            discovery and ordering fast, simple, and user-friendly.<br>
-
-                            The app includes features like product browsing, category-wise search, smart filtering,
-                            dynamic cart management, and secure payment methods(e.g Stripe). It also supports user
-                            registration/login, personalized user flow, and real-time updates. The UI is intuitive,
-                            ensuring a smooth and engaging shopping journey.<br>
-
-                            The frontend is developed using React Native for cross-platform support, while the backend
-                            uses Node.js and Express.js for API handling. MySQL manages all structured data, and
-                            Firebase Storage is integrated for scalable image storage. The architecture is designed to
-                            support future AI-based enhancements.
-                        </p>
-
-                    </section>
-                </section>
-                <section class="container">
-                    <div class="row">
-
-                        <!-- First Video Section -->
-                        <div class="col-12 col-lg-6 mb-4 wow animate__jackInTheBox" data-aos="fade-up">
-                            <div class="embed-responsive embed-responsive-16by9" style="width: 100%;">
-                                <video class="embed-responsive-item border rounded bg-light" style="width: 100%;"
-                                    autoplay muted controls>
-                                    <source src="Videos/Basit sanitary App useside.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <h3 class="text-center font-weight-bold mt-2">User Side</h3>
-                        </div>
-
-                        <!-- Second Video Section -->
-                        <div class="col-12 col-lg-6 mb-4 wow animate__jackInTheBox" data-aos="fade-up">
-                            <div class="embed-responsive embed-responsive-16by9" style="width: 100%;">
-                                <video class="embed-responsive-item border bg-light rounded" style="width: 100%;"
-                                    autoplay muted controls>
-                                    <source src="Videos/Basit sanitary App dasboard.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <h3 class="text-center font-weight-bold mt-2">Admin Side</h3>
-                        </div>
-                    </div>
-                </section>
-                <!-- <div class="text-center mb-5" data-aos="fade-up">
-                 <button class="preview-btn" onclick="downloadAPK()">Download APK</button>
-                </div> -->
-
-            </div>
-              <div
-                style="background-color: rgba(240, 248, 255, 0.068); display: flex; flex-direction: column;margin-top: 40px;padding-top: 20px;border-radius: 20px;">
-                <h3 class="text-center font-weight-bold" data-aos="fade-up">Pic Nova AI (AI BAsed Pics & Videos Editing App)</h3>
-                <section>
-                    <section style="display: flex;align-items: center; padding: 15px 15px 0 15px;">
-                        <p data-aos="fade-up">PicNova is an advanced AI-powered photo and video editing application
-                            designed for modern users who want creativity with simplicity. With intelligent editing
-                            tools, users can enhance their photos, apply filters, generate AI-driven effects, and
-                            transform ordinary media into professional-quality visuals within seconds.<br>
-
-                            The app supports features such as background removal, face enhancement, AI filters, and
-                            video stylization, making editing quick, smart, and fun. PicNova is built to serve both
-                            casual users and content creators, ensuring powerful editing while keeping the interface
-                            intuitive.<br>
-
-                            The frontend is built using React Native for seamless cross-platform performance, while
-                            Node.js and Express.js power the backend. Firebase and cloud-based AI Models are
-                            integrated for real-time media processing, ensuring speed, scalability, and creativity at
-                            its best.
-
-                        </p>
-
-                    </section>
-                </section>
-                <section class="container">
-                    <div class="row">
-
-                        <!-- First Video Section -->
-                        <div class="col-12 col-lg-6 mb-4 wow animate__jackInTheBox" data-aos="fade-up">
-                            <div class="embed-responsive embed-responsive-16by9" style="width: 100%;">
-                                <video class="embed-responsive-item border rounded bg-light" style="width: 100%;"
-                                    autoplay muted controls>
-                                    <source src="Videos/picnova.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <h3 class="text-center font-weight-bold mt-2">Under Development
-                            </h3>
-                        </div>
-
-                        <!-- Second Video Section -->
-                        <!-- <div class="col-12 col-lg-6 mb-4 wow animate__jackInTheBox" data-aos="fade-up">
-                            <div class="embed-responsive embed-responsive-16by9" style="width: 100%;">
-                                <video class="embed-responsive-item border bg-light rounded" style="width: 100%;"
-                                    autoplay muted controls>
-                                    <source src="Videos/demo1.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <h3 class="text-center font-weight-bold mt-2">Tap & Win Prizes Game(Lottery type)</h3>
-                        </div> -->
-                    </div>
-                </section>
-                <!-- <div class="text-center mb-5" data-aos="fade-up">
-                 <button class="preview-btn" onclick="downloadAPK()">Download APK</button>
-                </div> -->
-
-            </div>
-             <div
-                style="background-color: rgba(240, 248, 255, 0.068); display: flex; flex-direction: column;margin-top: 40px;padding-top: 20px;border-radius: 20px;">
-                <h3 class="text-center font-weight-bold" data-aos="fade-up">Tap & Win Game(Lottery type) </h3>
-                <section>
-                    <section style="display: flex;align-items: center; padding: 15px 15px 0 15px;">
-                       
-                        <p data-aos="fade-up">Tap & Win Prizes is an exciting lottery-style mobile game designed to
-                            bring fun, suspense, and rewards to players. The game features a grid of boxes where some
-                            contain hidden prizes while others are empty. Players purchase chances using mobile wallets
-                            (e.g., JazzCash, EasyPaisa, or Stripe for global users) and reveal boxes to test their
-                            luck.<br>
-
-                            The app is designed with secure user registration, wallet integration, prize history
-                            tracking, and real-time updates, ensuring fair play and engagement. Its smooth animations,
-                            rewarding gameplay, and suspense-driven mechanics make it both entertaining and
-                            addictive.<br>
-
-                            Developed with React Native for cross-platform support and Node.js/Express.js for backend
-                            APIs along With Sockets for real time user experience, the app uses MySQL for secure user and prize data management.
-                        </p>
-
-                    </section>
-                </section>
-                <section class="container">
-                    <div class="row">
-
-                        <!-- First Video Section -->
-                        <!-- <div class="col-12 col-lg-6 mb-4 wow animate__jackInTheBox" data-aos="fade-up">
-                            <div class="embed-responsive embed-responsive-16by9" style="width: 100%;">
-                                <video class="embed-responsive-item border rounded bg-light" style="width: 100%;"
-                                    autoplay muted controls>
-                                    <source src="Videos/demo.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <h3 class="text-center font-weight-bold mt-2">PicNova (AI Based Pics & Videos Editing App)
-                            </h3>
-                        </div> -->
-
-                        <!-- Second Video Section -->
-                        <div class="col-12 col-lg-6 mb-4 wow animate__jackInTheBox" data-aos="fade-up">
-                            <div class="embed-responsive embed-responsive-16by9" style="width: 100%;">
-                                <video class="embed-responsive-item border bg-light rounded" style="width: 100%;"
-                                    autoplay muted controls>
-                                    <source src="Videos/lottery.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <h3 class="text-center font-weight-bold mt-2">Coming Soon</h3>
-                        </div>
-                    </div>
-                </section>
-                <!-- <div class="text-center mb-5" data-aos="fade-up">
-                 <button class="preview-btn" onclick="downloadAPK()">Download APK</button>
-                </div> -->
-
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-12 heading-section text-center">
+                <h1 class="big big-2" id="mainTitle"></h1>
+                <h2 class="mb-4" id="subTitle" data-aos="fade-up"></h2>
+                <p id="subDescription" data-aos="fade-up"></p>
             </div>
         </div>
-    </section>
+
+        <!-- Dynamic App Projects Will Be Injected Here -->
+        <div id="appProjectsContainer"></div>
+
+    </div>
+</section>
+
 </body>
 
 </html>
@@ -294,6 +163,85 @@
         document.body.removeChild(link);
     }
 </script>
+
+
+<script>
+fetch("data/appProjects.json")
+    .then(res => res.json())
+    .then(data => {
+
+        // Set Titles
+        document.getElementById("mainTitle").innerText = data.mainTitle;
+        document.getElementById("subTitle").innerText = data.mainTitle;
+        document.getElementById("subDescription").innerText = data.subTitle;
+
+        const container = document.getElementById("appProjectsContainer");
+
+        data.apps.forEach(app => {
+
+            // Build Technology Tags
+            const tagsHTML = app.tags
+                .map(tag => `<span class="badge-tech">${tag}</span>`)
+                .join("");
+
+            // Build Description Points
+            const descPointsHTML = app.descriptionPoints
+                .map(point => `<li>➡️ ${point}</li>`)
+                .join("");
+
+            // Build Videos
+            const videosHTML = app.videos
+                .map(video => `
+                    <div class="col-12 col-lg-6 mb-4" data-aos="fade-up">
+                        <div class="embed-responsive embed-responsive-16by9" style="width: 100%;">
+                            <video class="embed-responsive-item border bg-light rounded"
+                                   style="width: 100%;" autoplay muted controls>
+                                <source src="${video.file}" type="video/mp4">
+                            </video>
+                        </div>
+                        <h3 class="text-center font-weight-bold mt-2">${video.title}</h3>
+                    </div>
+                `)
+                .join("");
+
+            // Final App Card HTML
+            const appHTML = `
+                <div class="app-card">
+                    
+                    <h3 class="text-center font-weight-bold" data-aos="fade-up">
+                        ${app.title}
+                    </h3>
+
+                    <!-- Short description -->
+                    <p class="app-description" data-aos="fade-up">
+                        ${app.description}
+                    </p>
+
+                    <!-- Technology Tags -->
+                    <div class="app-tags" data-aos="fade-up">
+                        ${tagsHTML}
+                    </div>
+
+                    <!-- Description Points -->
+                    <ul class="app-features" data-aos="fade-up">
+                        ${descPointsHTML}
+                    </ul>
+
+                    <section class="container">
+                        <div class="row">
+                            ${videosHTML}
+                        </div>
+                    </section>
+
+                </div>
+            `;
+
+            container.innerHTML += appHTML;
+        });
+    });
+</script>
+
+
 
 <script>
     // Smooth scrolling using jQuery (optional)

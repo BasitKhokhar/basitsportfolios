@@ -1,0 +1,84 @@
+{
+  "mainTitle": "React Native Apps Projects",
+  "subTitle": "Explore my portfolio showcasing diverse React Native App projects highlighting creativity, functionality, and technical expertise.",
+
+  "apps": [
+    {
+      "title": "Full-stack Ecommerce App",
+      "description": "A powerful cross-platform e-commerce mobile application built for seamless sanitary product shopping. Designed with a modern UI, smooth navigation, and secure backend integration.",
+      "descriptionPoints": [
+        "Cross-platform app built using React Native for Android & iOS.",
+        "Smart product browsing with category filters.",
+        "Dynamic cart system with real-time updates.",
+        "Stripe payment integration for secure transactions.",
+        "User authentication & profile management.",
+        "Admin dashboard for product and order management.",
+        "Backend powered by Node.js, Express.js, MySQL.",
+        "Images stored in Firebase Storage."
+      ],
+      "tags": ["React Native", "Node.js", "Express.js", "MySQL", "Firebase", "Stripe", "Cross-platform"],
+      "videos": [
+        {
+          "title": "User Side",
+          "file": "Videos/Basit sanitary App useside.mp4"
+        },
+        {
+          "title": "Admin Side",
+          "file": "Videos/Basit sanitary App dasboard.mp4"
+        }
+      ]
+    },
+
+    {
+      "title": "Pic Nova AI (AI Based Pics & Videos Editing App)",
+      "description": "An advanced AI-powered media editing app that allows users to edit photos and videos using machine learning models. Designed for creators who want powerful effects with simplicity.",
+      "descriptionPoints": [
+        "AI-based photo editing with advanced enhancement tools.",
+        "Background removal using machine learning models.",
+        "AI filters & face enhancement.",
+        "Video stylization using real-time AI effects.",
+        "Cloud-based processing for efficiency.",
+        "Smooth cross-platform performance.",
+        "Secure backend API powered by Node.js & Express.js.",
+        "Firebase integrated for storage and authentication."
+      ],
+      "tags": ["React Native", "AI Models", "Firebase", "Node.js", "Express.js", "Computer Vision", "Cross-platform"],
+      "videos": [
+        {
+          "title": "Under Development",
+          "file": "Videos/picnova.mp4"
+        },
+        {
+          "title": "Tap & Win Prizes Game (Lottery Type)",
+          "file": "Videos/demo1.mp4"
+        }
+      ]
+    },
+
+    {
+      "title": "Tap & Win Game (Lottery Type)",
+      "description": "A lottery-based prize-winning mobile game featuring hidden reward boxes, wallet integration, and real-time interaction via sockets.",
+      "descriptionPoints": [
+        "Fun and interactive lottery-style gameplay.",
+        "Wallet integration for EasyPaisa, JazzCash, and Stripe.",
+        "User registration and secure authentication.",
+        "Real-time events using socket communication.",
+        "Animated UI/UX for smooth gameplay.",
+        "Prize tracking with winner history.",
+        "Backend built using Node.js, Express.js, and MySQL.",
+        "Scalable architecture with cross-platform support."
+      ],
+      "tags": ["React Native", "Node.js", "Express.js", "MySQL", "Socket.io", "Stripe", "Mobile Payments"],
+      "videos": [
+        {
+          "title": "PicNova (AI Based Pics & Video Editing App)",
+          "file": "Videos/demo.mp4"
+        },
+        {
+          "title": "Coming Soon",
+          "file": "Videos/lottery.mp4"
+        }
+      ]
+    }
+  ]
+}
