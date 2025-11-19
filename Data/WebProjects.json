@@ -1,0 +1,79 @@
+{
+  "mainTitle": "Websites Projects",
+  "subTitle": "Explore my portfolio showcasing diverse web projects highlighting creativity, functionality, and technical expertise.",
+
+  "featured": [
+    {
+      "title": "ShadowSuit (Cybersecurity Project)",
+      "name": "ShadowSuite",
+      "category": "Cybersecurity / Next.js Website",
+      "description": [
+        "ShadowSuite is a premier cybersecurity software platform developed for an Indian client. The site provides a secure, professional, and user-friendly interface to explore, evaluate, and purchase specialized cybersecurity software.",
+        "It is built using Next.js, supports dynamic product interactions, and includes WhatsApp-based client support. The website serves as a commercial hub for elite cybersecurity tools intended for authorized and educational use."
+      ],
+      "image": "images/shadowsuit.PNG",
+      "previewLink": "https://www.shadowsuit.shop/"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Medical related Website",
+      "image": "images/web1.PNG",
+      "previewLink": "https://basithealthhub.netlify.app/",
+      "category": "Medical"
+    },
+    {
+      "name": "AutoCare related Website",
+      "image": "images/web2.PNG",
+      "previewLink": "https://autocarehub.netlify.app/",
+      "category": "Automobile"
+    },
+    {
+      "name": "Hoteling related Website Project",
+      "image": "images/web3.PNG",
+      "previewLink": "https://basitsroyalhotel.netlify.app/",
+      "category": "Hotel"
+    },
+    {
+      "name": "IU University Clone Website Design",
+      "image": "images/web4.PNG",
+      "previewLink": "https://basitkhokhar.github.io/second-project/",
+      "category": "University"
+    },
+    {
+      "name": "Admin Panel Frontend Design",
+      "image": "images/web5.PNG",
+      "previewLink": "https://basitadminpanel.netlify.app/",
+      "category": "Admin Panel"
+    },
+    {
+      "name": "Figma Design to Coding Web Design",
+      "image": "images/web6.PNG",
+      "previewLink": "https://basitkhokhar.github.io/project-figma/",
+      "category": "Figma to Code"
+    },
+    {
+      "name": "Fashion Sample Web Design",
+      "image": "images/web7.PNG",
+      "previewLink": "https://basitkhokhar.github.io/projectfashionblog/",
+      "category": "Fashion"
+    }
+  ],
+
+  "fullStackProject": {
+    "title": "Full-stack Ecommerce Project",
+    "name": "Basit Sanitary Store",
+    "description": "A fully functional e-commerce website specializing in sanitary products, built with React.js, Tailwind CSS, Node.js, and MySQL. Features include browsing, filtering, cart management, user accounts, and admin dashboard functionality.",
+    "videos": [
+      {
+        "title": "Website",
+        "file": "Videos/abcd.mp4"
+      },
+      {
+        "title": "Dashboard",
+        "file": "Videos/Basitsanitarydashboard.mp4"
+      }
+    ]
+  }
+}
